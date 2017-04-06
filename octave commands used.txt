@@ -1,0 +1,115 @@
+5+9
+15/10
+[1,2,3] *2
+[1,2,3] *[1,2,3]
+[1,2,3] *2
+img = imread('g:\TEMP\Prank\athens.jpg')
+img = imread('g:\TEMP\Prank\athens.jpg');
+imshow (img)
+pkg install -forge general control signal image
+pkg
+list pkg
+pkg list
+img(1:10,1:10)
+imshow(img(1:10,1:10))
+imshow(img(1:100,1:100))
+imshow(img(500:600,500:600))
+imshow(img(400:700,400:700))
+imshow(img(300:700,400:700))
+imshow(img(300:700,450:700))
+imshow(img(300:700,400:750))
+imshow(img(300:700,400:750))
+imshow(img(300:700,400:700))
+img = imread('G:\Git\Repositories\Udacity\IntroComputerVision\visning-160.jpg');
+imshow(img)
+imgreen = img(:,:,2);
+imshow(imgreen)
+line([1 512], [256 256], 'color', 'r')
+plot(imgreen(256,:));
+size img
+imgshow(img)
+imshow(img)
+size(img)
+size(imgreen
+size(imgreen)
+size(imgreen)
+disp(size(imgreen))
+disp(class(imgreen))
+disp(class(img))
+img(101:103, 201:203)
+disp(size(imgreen))
+imgreen(1800:2100, 2000:2300);
+iminv = 255 .- imgreen;
+imshow(iminv);
+imtest = abs(imgreen - imgreen);
+imshow(imtest);
+imtest = abs(imgreen - imgreen);
+noise = randn([16 16])
+imshow(noise)
+noise = randn([2000 2667]);
+imnoise = imgreen + noise;
+imshow(imnoise)
+imshow(imnoise); Om man verkligen vill sl ut ett land ska man ta alla deras samsungs och erstta med iPhone. Det r terrorism p hg niv
+imshow(imnoise); imshow(imgreen); imshow(noise);
+imshow(imgreen)
+imshow(imgreen, imnoise, noise)
+imshow(imgreen)
+imshow(imnoise)
+imshow(imgreen)
+imnoise = imgreen + noise*10;
+imshow(imnoise)
+imnoise = imgreen * noise;
+imnoise = imgreen .* noise;
+imshow(imnoise)
+imnoise = imgreen .* noise/10;
+imshow(imnoise)
+imnoise = imgreen .* (noise/10);
+imshow(imnoise)
+hist(noise, [-3 2 1 0 1 2 3]);
+hist(noise, [-3 2 1 0 1 2 3]);
+ lkdlksl
+w
+[n, x] = hist(noise, [-3 2 1 0 1 2 3]);
+noise = randn[1 100];
+noise = randn([1 100]);
+[n, x] = hist(noise, [-3 2 1 0 1 2 3]);
+noise
+sorted = sort(noise)
+sorted
+[n, x] = hist(sorted, [-3 2 1 0 1 2 3]);
+noise = randn([1 100]);
+noise
+[n, x] = hist(noise
+[n, x] = hist(noise)
+plot(n, x)
+plot(n)
+plot(n, x)
+plot(x, n)
+noise = randi([1 100])
+noise = randn([1 100])
+[n, x] = hist(noise, [-3 -2 -1 0 1 2 3]);
+[n, x] = hist(noise, [-3 -2 -1 0 1 2 3])
+plot(n, x)
+plot(x, n)
+noise = randn([1 1000])
+plot(x, n)
+noise = randn([1 1000]);
+[n, x] = hist(noise, [-3 -2 -1 0 1 2 3])
+plot(x, n)
+[n, x] = hist(noise, [-3 -2.5 -2 -1.5 -1 -0.5 0 0.5 1 1.5 2 2.5 3])
+plot(x, n)
+[n, x] = hist(noise, linspace(-3, 3, 20))
+plot(x, n)
+noise = randn([1 100000]);
+[n, x] = hist(noise, linspace(-3, 3, 20))
+plot(x, n)
+[n, x] = hist(noise, linspace(-3, 3, 100))
+plot(x, n)
+[n, x] = hist(noise, linspace(-3, 3, 51))
+plot(x, n)
+imshow(noise)
+noise = randn(size(imggreen));
+noise = randn(size(imgred));
+noise = randn(size(img));
+imshow(noise)
+imshow(noise, [])
