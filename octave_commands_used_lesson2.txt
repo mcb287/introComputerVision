@@ -1,0 +1,45 @@
+pkg list
+pkg install -forge general control signal image
+img = imread('C:\Users\padermar\udacity\introComputerVision\visning-981.jpg');
+imshow(img)
+imred = img(:,:,1);
+imshow(imred)
+matrix = [0,0,0,0;]
+matrix = [0,0,0,0,0,0,0;0,0,1,1,1,0,0;0,1,2,3,2,1,0;1,2,3,4,3,2,1;0,1,2,3,2,1,0;0,0,1,1,1,0,0;0,0,0,0,0,0,0]
+matrix = [0,0,0,1,0,0,0;0,0,1,2,1,0,0;0,1,2,3,2,1,0;1,2,3,4,3,2,1;0,1,2,3,2,1,0;0,0,1,2,1,0,0;0,0,0,1,0,0,0]
+surf(matrix)
+matrix = [0,0,0,1,0,0,0;0,0,1.5,2,1.5,0,0;0,1,2,3,2,1,0;1,2,3,4,3,2,1;0,1,2,3,2,1,0;0,0,1,2,1,0,0;0,0,0,1,0,0,0]
+surf(matrix)
+matrix = [0,0,0,1,0,0,0;0,0,1,2,1,0,0;0,1,2,3,2,1,0;1,2,3,4,3,2,1;0,1,2,3,2,1,0;0,0,1,2,1,0,0;0,0,0,1,0,0,0]
+surf(matrix)
+hsize = 31;
+sigma = 5;
+h = fspecial('gaussian', hsize , sigma );
+pkg image
+pkg load image
+h = fspecial('gaussian', hsize , sigma );
+surf(h)
+gaussian = imfilter(imgred, h);
+gaussian = imfilter(imred, h);
+imshow(gaussian)
+gaussiancombo = 0.6*imred + 0.6*gaussian; 
+imshow(gaussiancombo);
+imshow(gaussiancombo);
+imshow(gaussian)
+imshow(imred)
+immono = img(:,:,1)/3 + img(:,:,2)/3 + img(:,:,3)/3;
+imshow(immono)
+
+noise_sigma = 25;
+noise = randn(size(img)) .* noise_sigma;
+moisy_img = img + noise;
+imshow(noisy_img);
+
+filter_size = 11;
+filter_sigma = 2;
+
+filter = fspecial('gaussian', filter_size, filter_sigma);
+
+smoothed = imfilter(noisy_img, filter);
+imshow(smoothed);
+
